@@ -28,8 +28,8 @@ const EllysBalancedStrings = (string, index = 0, total = 1) => {
       if (changeStr[i] === "Y") i++;
       
       if (
-            changeStr.length > 100 ||
-            changeStr.length < 2
+            changeStr.length >= 100 ||
+            changeStr.length <= 2
         ) {
         return 'You must write a string between 2 and 100 letters'
         }
